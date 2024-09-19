@@ -4,6 +4,7 @@ image:
   repository: jetbrains/teamcity-server
   tag: latest
   pullPolicy: IfNotPresent
+  name: teamcity-server-instance
 
 service:
   type: ClusterIP
