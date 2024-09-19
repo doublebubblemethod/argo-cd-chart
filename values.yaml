@@ -1,5 +1,5 @@
 replicaCount: 1
-name: teamcity-app
+name: team-city-app
 image:
   repository: jetbrains/teamcity-server
   tag: latest
@@ -7,17 +7,17 @@ image:
   name: teamcity-server-instance
 
 service:
-  type: ClusterIP
+  type: NodePort
   port: 8111
 
 persistence:
   data:
     enabled: true
     accessMode: ReadWriteOnce
-    size: 10Gi
+    size: 5Gi
   logs:
     enabled: true
     accessMode: ReadWriteOnce
-    size: 10Gi
+    size: 5Gi
 
 resources: {}
