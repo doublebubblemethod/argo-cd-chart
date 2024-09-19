@@ -1,5 +1,5 @@
 replicaCount: 1
-
+name: teamcity-app
 image:
   repository: jetbrains/teamcity-server
   tag: latest
